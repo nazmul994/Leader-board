@@ -21,16 +21,13 @@
     .header-icon {
         display: flex;
         align-items: center;
+        color: white;
     }
     
     .header-icon img {
         width: 40.42px;
         height: 51px;
         margin-right: 12px;
-    }
-    
-    #text-idea {
-        color: white;
     }
     
     .nav-ber {
