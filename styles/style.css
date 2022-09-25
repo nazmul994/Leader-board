@@ -1,0 +1,212 @@
+    /* google fonts */
+    
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+    body {
+        font-family: 'Poppins', sans-serif;
+        background-color: #efedfd;
+        margin: 0;
+        padding: 0;
+    }
+    /*********** css style **********/
+    /* ---------header start--------- */
+    
+    .header {
+        background-color: #562EFF;
+        height: 94px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    
+    .header-icon {
+        display: flex;
+        align-items: center;
+    }
+    
+    .header-icon img {
+        width: 40.42px;
+        height: 51px;
+        margin-right: 12px;
+    }
+    
+    #text-idea {
+        color: white;
+    }
+    
+    .nav-ber {
+        display: flex;
+        align-items: center;
+    }
+    
+    .nav-ber a {
+        text-decoration: none;
+        justify-content: center;
+        margin-right: 12px;
+        color: white;
+        font-size: 1.2em;
+    }
+    /*------------ header end------------- */
+    
+    main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .container {
+        width: 890px;
+        background-color: #FFFFFF;
+        border-radius: 5px;
+        padding: 30px;
+        margin-top: 21px;
+    }
+    
+    hr {
+        border: 1px solid #D1D1D1;
+    }
+    
+    .section-title {
+        color: #562EFF;
+        font-size: 24px;
+        margin-top: 3px;
+    }
+    
+    .top-players {
+        padding-bottom: 30px;
+    }
+    
+    .players {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-row-gap: 30px;
+    }
+    
+    .player {
+        display: flex;
+        align-items: center;
+    }
+    
+    .player img {
+        width: 56px;
+        height: 56px;
+    }
+    
+    .players-name {
+        padding-left: 16px;
+    }
+    /*-----------------------
+     top blogs css styles
+------------------------- */
+    
+    .top-blogs {
+        padding-top: 30px;
+    }
+    
+    .blogs {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .blog {
+        display: flex;
+        margin-right: 45px;
+    }
+    
+    .blog-thumbnail img {
+        width: 177px;
+        height: 117px;
+    }
+    
+    .blog-info {
+        margin-left: 16px;
+    }
+    
+    .blog-title {
+        font-size: 20px;
+    }
+    
+    .blog-author {
+        color: #9F9F9F;
+        font-size: 16px;
+    }
+    
+    .blog-author a {
+        text-decoration: none;
+        font-size: 16px;
+        color: #562EFF;
+    }
+    /*------------------
+    course style 
+  -----------------*/
+    
+    .courses {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-column-gap: 30px;
+    }
+    
+    .course {
+        box-shadow: 10px 10px rgba(0, 0, 0, 0.02);
+        border-radius: 16px;
+    }
+    
+    .course .course-banner img {
+        width: 224px;
+        height: 104px;
+    }
+    
+    .course-author {
+        color: #ED6B4F;
+    }
+    
+    .course-info {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    .fa-star.filled {
+        color: #FFC014;
+    }
+    
+    .fa-star.empty {
+        color: #AEAEAE;
+    }
+    
+    .course-durstion {
+        color: #FF4A60;
+        background: #FFE4E8;
+        border-radius: 15px;
+        padding: 5px 10px;
+    }
+    
+    .footer-text {
+        background-color: black;
+        width: 100%;
+        color: white;
+        text-align: center;
+        padding: 35px;
+    }
+    /*------------------
+    media queries 
+--------------------*/
+    /* Mobile devises */
+    
+    @media only screen and (max-width:688px) {
+        .container {
+            width: 100%;
+        }
+        .players,
+        .blogs,
+        .courses {
+            grid-template-columns: repeat(1, 1fr);
+            align-items: center;
+        }
+        .player,
+        .blog,
+        .course {
+            flex-direction: column;
+            margin-left: 25px;
+            margin-bottom: 25px;
+        }
+    }
